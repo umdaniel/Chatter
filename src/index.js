@@ -10,7 +10,7 @@ import store from './store';
 import firebase from 'firebase';
 
 // Setup for firebase.
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyB3L6mVz0c98T87saZ3svSuQ6GnzHXLwus",
   authDomain: "chatter-245f6.firebaseapp.com",
   projectId: "chatter-245f6",
