@@ -27,7 +27,8 @@ export const signup = (user) => {
                     firstName: user.firstName,
                     lastName: user.lastName,
                     uid: data.user.uid,
-                    createdAt: new Date()
+                    createdAt: new Date(),
+                    isOnline: true
                 })
                 .then(() => {
                     // Success.
@@ -111,5 +112,23 @@ export const isLoggedInUser = () => {
                 payload: { error: 'Login again please' }
             });
         }
+    }
+}
+
+export const logout = () => {
+    return async dispatch => {
+        dispatch({ type: `${authConstant.USER_LOGOUT}_REQUEST` });
+
+        // Logout the user.
+        firebase.auth()
+        .signOut()
+        .then(() => {
+            localStorage.clear();
+            dispatch({ type: `${authConstant.USER_LOGOUT}_SUCCESS` });
+        })
+        .catch(error => {
+            console.log(error);
+            dispatch({ type: `${authConstant.USER_LOGOUT}_FAILURE`, payload: { error }});
+        })
     }
 }
