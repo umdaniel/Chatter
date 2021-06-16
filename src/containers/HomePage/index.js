@@ -1,8 +1,12 @@
 import React from 'react'
+
+import Layout from '../../components/Layout';
 import './style.css';
 
 const HomePage = (props) => {
+  
   return (
+    <Layout>
     <section className="container">
     <div className="listOfUsers">
 
@@ -11,8 +15,9 @@ const HomePage = (props) => {
                 {/* Change this image */}
                 <img src="https://i.pinimg.com/originals/be/ac/96/beac96b8e13d2198fd4bb1d5ef56cdcf.jpg" alt="" />
             </div>
-            <div style={{margin: '0 10px'}}>
+            <div style={{ display: 'flex', flex: 1, justifyContent: 'space-between', margin: '0 10px'}}>
                 <span style={{fontWeight: 500}}>Dan Um</span>
+                <span>online</span>
             </div>
         </div>
                 
@@ -33,6 +38,7 @@ const HomePage = (props) => {
         </div>
     </div>
 </section>
+</Layout>
   );
 }
 
