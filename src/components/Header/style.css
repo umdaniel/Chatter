@@ -3,14 +3,17 @@
     position: relative;
     height: 60px;
     display: flex;
-    background: #1b5ff9;
+    background: #E6C0E9;
     justify-content: space-between;
     box-sizing: border-box;
+    font-family: 'Tourney', cursive;
+    font-size: 20px;
+    box-shadow: 0 0 5px 1px#EAC8CA;
 }
 
 .logo{
-    font-size: 20px;
-    color: #fff;
+    font-size: 30px;
+    color: #8D89A6;
     text-transform: capitalize;
     font-weight: bold;
     margin: 18px;
@@ -23,7 +26,7 @@
 }
 
 .menu > li > a{
-    color: #fff;
+    color: #8D89A6;
     font-weight: bold;
     text-shadow: 0 0;
     text-decoration: none;
@@ -31,7 +34,7 @@
 
 .leftMenu{
     display: flex; 
-    color: #fff; 
+    color: #8D89A6; 
     margin: 20px;
 }
 
@@ -40,7 +43,7 @@
 }
 
 .leftMenu > li > a{
-    color: #fff;
+    color: #8D89A6;
 }
 
 .leftMenu > li > a.active{

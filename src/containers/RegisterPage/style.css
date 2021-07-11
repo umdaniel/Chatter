@@ -3,3 +3,23 @@
     position: relative;
     margin: 50px auto;
 }
+
+.title {
+    font-family: "Tourney", cursive;
+    padding: 5px;
+}
+
+.signup {
+    border: none;
+    outline: none;
+    padding: 5px;
+    position: relative;
+    border-radius: 8px;
+    letter-spacing: 0.7px;
+    background-color: #EAC8CA;
+    color: black;
+    font-size: 20px;
+    font-family: "Tourney", cursive;
+    cursor: pointer;
+    box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
+}

@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './style.css';
 import Layout from '../../components/Layout';
 import { useDispatch, useSelector } from 'react-redux';
-import { getRealtimeUsers, updateMessage, getRealtimeConversations } from '../../actions';
-
+import { getRealtimeUsers, updateMessage, getRealtimeConversations } from '../../actions/user.actions';
 
 const User = (props) => {
 
@@ -13,7 +12,7 @@ const User = (props) => {
   return (
     <div onClick={() => onClick(user)} className="displayName">
                   <div className="displayPic">
-                      <img src="https://i.pinimg.com/originals/be/ac/96/beac96b8e13d2198fd4bb1d5ef56cdcf.jpg" alt="" />
+                      <img src="https://www.pinclipart.com/picdir/middle/95-958614_man-icon-person-logo-png-clipart.png" alt="profile" />
                   </div>
                   <div style={{ display: 'flex', flex: 1, justifyContent: 'space-between', margin: '0 10px'}}>
                       <span style={{fontWeight: 500}}>{user.firstName} {user.lastName}</span>
@@ -49,8 +48,6 @@ const HomePage = (props) => {
 
 
   }, []);
-
-  //console.log(user);
 
   //componentWillUnmount
   useEffect(() => {

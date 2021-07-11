@@ -15,12 +15,6 @@ const LoginPage = (props) => {
     const dispatch = useDispatch();
     const auth = useSelector(state => state.auth);
 
-    // useEffect(() => {
-    //     if (!auth.authenticacted) {
-    //         dispatch(isLoggedInUser());
-    //     }
-    // }, []);
-
     const userLogin = (e) => {
         e.preventDefault();
 
@@ -60,7 +54,7 @@ const LoginPage = (props) => {
                         />
 
                         <div>
-                            <button>Login</button>
+                            <button className="login">Login</button>
                         </div>
                     </form>
                 </Card>

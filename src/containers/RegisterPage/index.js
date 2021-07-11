@@ -35,7 +35,7 @@ const RegisterPage = (props) => {
             <div className= 'registerContainer'>
                 <Card>
                     <form onSubmit= {registerUser}>
-                    <h3>Sign Up</h3>
+                    <h3 className="title">Register</h3>
                     <input
                         name= 'firstName'
                         type= 'text'
@@ -68,7 +68,7 @@ const RegisterPage = (props) => {
                         />
                     
                     <div>
-                        <button>Sign Up</button>
+                        <button className="signup">Sign Up</button>
                     </div>
                     </form>
                 </Card>

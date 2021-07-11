@@ -1,7 +1,3 @@
-Chatter is a web messaging application created to talk with your friends and family online.
-
-Features such as emojis and images will be implemented in the near future.
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
