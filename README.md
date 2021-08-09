@@ -1,5 +1,6 @@
 Chatter:
 A web based chatting application that allows registered users to communicate with their friends and family online.
+Emojis and images will be implemented soon.
 
 # Getting Started with Create React App
 
