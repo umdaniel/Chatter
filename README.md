@@ -2,10 +2,6 @@ Chatter:
 A web based chatting application that allows registered users to communicate with their friends and family online.
 Emojis and images will be implemented soon.
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
